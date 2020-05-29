@@ -13,6 +13,8 @@
 		FAAFD5842481318E00C47CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAFD5822481318E00C47CBF /* Main.storyboard */; };
 		FAAFD5862481319000C47CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAFD5852481319000C47CBF /* Assets.xcassets */; };
 		FAAFD5892481319000C47CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAFD5872481319000C47CBF /* LaunchScreen.storyboard */; };
+		FAAFD5952481582400C47CBF /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFD5942481582400C47CBF /* UserData.swift */; };
+		FAAFD59A24816EA600C47CBF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFD59924816EA600C47CBF /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FAAFD5852481319000C47CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAAFD5882481319000C47CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAAFD58A2481319000C47CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAFD5942481582400C47CBF /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		FAAFD59924816EA600C47CBF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		FAAFD57B2481318E00C47CBF /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				FAAFD57C2481318E00C47CBF /* AppDelegate.swift */,
-				FAAFD57E2481318E00C47CBF /* SceneDelegate.swift */,
-				FAAFD5802481318E00C47CBF /* ViewController.swift */,
-				FAAFD5822481318E00C47CBF /* Main.storyboard */,
-				FAAFD5852481319000C47CBF /* Assets.xcassets */,
-				FAAFD5872481319000C47CBF /* LaunchScreen.storyboard */,
-				FAAFD58A2481319000C47CBF /* Info.plist */,
+				FAAFD592248157E600C47CBF /* ViewControllers */,
+				FAAFD593248157F700C47CBF /* Models */,
+				FAAFD591248157D400C47CBF /* Storyboards */,
+				FAAFD5962481596A00C47CBF /* Sources */,
+				FAAFD5902481579700C47CBF /* SupportingFiles */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		FAAFD5902481579700C47CBF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FAAFD57C2481318E00C47CBF /* AppDelegate.swift */,
+				FAAFD57E2481318E00C47CBF /* SceneDelegate.swift */,
+				FAAFD58A2481319000C47CBF /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FAAFD591248157D400C47CBF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FAAFD5822481318E00C47CBF /* Main.storyboard */,
+				FAAFD5872481319000C47CBF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FAAFD592248157E600C47CBF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAAFD5802481318E00C47CBF /* ViewController.swift */,
+				FAAFD59924816EA600C47CBF /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FAAFD593248157F700C47CBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAAFD5942481582400C47CBF /* UserData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAAFD5962481596A00C47CBF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FAAFD5852481319000C47CBF /* Assets.xcassets */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAFD5812481318E00C47CBF /* ViewController.swift in Sources */,
+				FAAFD59A24816EA600C47CBF /* WelcomeViewController.swift in Sources */,
 				FAAFD57D2481318E00C47CBF /* AppDelegate.swift in Sources */,
+				FAAFD5952481582400C47CBF /* UserData.swift in Sources */,
 				FAAFD57F2481318E00C47CBF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +334,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B5VM7C6TM4;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jetlaunch.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +353,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B5VM7C6TM4;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jetlaunch.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
