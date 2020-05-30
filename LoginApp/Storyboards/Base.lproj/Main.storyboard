@@ -106,7 +106,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="LogOutUser" destination="X9G-gH-1uK" eventType="touchUpInside" id="rHp-Op-STM"/>
+                                    <action selector="LogOutUser" destination="X9G-gH-1uK" eventType="touchUpInside" id="jHG-Ej-10z"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gmp-Gs-9BH">
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t8G-c6-UGp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1852.5" y="114.08450704225352"/>
+            <point key="canvasLocation" x="1836" y="115"/>
         </scene>
         <!--Airsoft-->
         <scene sceneID="x2T-Rs-UOs">
@@ -170,19 +170,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xik-4v-g6y">
-                                <rect key="frame" x="40" y="127" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xik-4v-g6y">
+                                <rect key="frame" x="30" y="30" width="260" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="BD1-YE-oah"/>
+                                    <constraint firstAttribute="width" constant="260" id="lrs-px-J5K"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWf-cf-ImB">
+                                <rect key="frame" x="30" y="280" width="260" height="122"/>
+                                <string key="text">Airsoft is a compepetive shooting in which participants eliminate opposing players with spherical plastic projectiles launched via replica air weapons called airsoft guns.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99439388510000004" green="0.69496828320000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="XWf-cf-ImB" firstAttribute="leading" secondItem="LC4-lz-lIN" secondAttribute="leading" constant="30" id="63j-w5-Md6"/>
+                            <constraint firstItem="LC4-lz-lIN" firstAttribute="trailing" secondItem="XWf-cf-ImB" secondAttribute="trailing" constant="30" id="FaX-yC-WWU"/>
+                            <constraint firstItem="Xik-4v-g6y" firstAttribute="top" secondItem="LC4-lz-lIN" secondAttribute="top" constant="30" id="c4U-KN-kpQ"/>
+                            <constraint firstItem="XWf-cf-ImB" firstAttribute="top" secondItem="Xik-4v-g6y" secondAttribute="bottom" constant="34" id="fW9-ZE-ex8"/>
+                            <constraint firstItem="Xik-4v-g6y" firstAttribute="centerX" secondItem="QZf-BN-9Zo" secondAttribute="centerX" id="icr-AT-H5l"/>
+                            <constraint firstItem="LC4-lz-lIN" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XWf-cf-ImB" secondAttribute="bottom" constant="112" id="mJe-V7-Ks9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LC4-lz-lIN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Airsoft" image="1.circle.fill" catalog="system" id="W49-Rc-R1A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfh-X2-28Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="242" y="921"/>
+            <point key="canvasLocation" x="285" y="897.88732394366195"/>
         </scene>
         <!--Enduro-->
         <scene sceneID="GL2-bv-Myp">
@@ -193,18 +211,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="g7V-mG-Pv1">
-                                <rect key="frame" x="40" y="124" width="240" height="128"/>
+                                <rect key="frame" x="87" y="20" width="146" height="268"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99439364669999997" green="0.68314212559999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="UYj-i0-68D"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Enduro" image="2.circle.fill" catalog="system" id="GiK-Y7-gWe"/>
+                    <navigationItem key="navigationItem" id="9qq-4X-ihL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBD-G0-coF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="920"/>
+            <point key="canvasLocation" x="995.625" y="897.88732394366195"/>
         </scene>
         <!--Hiking-->
         <scene sceneID="2xt-TL-LRI">
@@ -215,18 +234,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="hLX-5D-0CB">
-                                <rect key="frame" x="40" y="119" width="240" height="128"/>
+                                <rect key="frame" x="16" y="20" width="288" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99439328910000002" green="0.67131626609999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="IeW-g0-LAd"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hiking" image="3.circle.fill" catalog="system" id="uS1-oX-xY0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7e5-cO-jb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1787" y="919"/>
+            <point key="canvasLocation" x="1696.875" y="897.88732394366195"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lcs-RQ-rRf">

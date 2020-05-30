@@ -36,11 +36,13 @@ class ViewController: UIViewController {
         let password = userPasswordTextField.text
         if (userName == userData.userName && password == userData.userPassword) {
             performSegue(withIdentifier: "LogIn", sender: nil)
+            userPasswordTextField.text = nil
+            userNameTextField.text = nil
         } else {
                 let alert = UIAlertController(title: "Invalid login or password", message: "Please enter correct login or password", preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
-            
+            userPasswordTextField.text = nil
         }
     }
     
