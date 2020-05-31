@@ -28,6 +28,9 @@ class ViewController: UIViewController {
                 let tabBarController = segue.destination as! UITabBarController
                 let welcomeVC = tabBarController.viewControllers?.first as! WelcomeViewController
                 welcomeVC.userName = userNameTextField.text
+                logInButton.layer.cornerRadius = 10
+                userNameTextField.layer.cornerRadius = 10
+                userPasswordTextField.layer.cornerRadius = 10
             }
     }
    

@@ -20,11 +20,12 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         userNameLabel.text = userName
+        logOutButton.layer.cornerRadius = 10
         
     }
     @IBAction func LogOutUser() {
+        dismiss(animated: true)
     }
-    
 
     /*
     // MARK: - Navigation
